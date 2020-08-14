@@ -9,7 +9,7 @@
 
 <div class="d-flex justify-content-between align-items-center">
     <h1>Contatos</h1>
-    <a href="" class="btn btn-success mt-3 mb-3" data-toggle="modal" data-target="#modalAdicionar">Novo</a>
+    <a href="" class="btn btn-success mt-3 mb-3" data-toggle="modal" data-target="#modalAdicionar"><i class="fa fa-plus-circle" aria-hidden="true"></i> Novo</a>
 </div>
 
 <table class="table table-hover">
@@ -27,7 +27,7 @@
             <td><?=$contato->getEmail();?></td>
             <td><?=$contato->getCelular();?></td>
             <td>
-                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalEditar<?=$contato->getId();?>">Editar</a>
+                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalEditar<?=$contato->getId();?>"><i class="fa fa-wrench" aria-hidden="true"></i> Editar</a>
                 
                 <!-- Modal Editar -->
                 <div class="modal fade" id="modalEditar<?=$contato->getId();?>" tabindex="-1" role="dialog" aria-labelledby="modalEditarLabel" aria-hidden="true">
@@ -59,14 +59,14 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                    <button type="submit" class="btn btn-primary">Salvar</button>
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Salvar</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
 
-                <a class="btn btn-danger" href="excluir.php?id=<?=$contato->getId();?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
+                <a class="btn btn-danger" href="excluir.php?id=<?=$contato->getId();?>" onclick="return confirm('Tem certeza que deseja excluir?')"><i class="fa fa-times" aria-hidden="true"></i> Excluir</a>
             </td>
         </tr>
     <?php endforeach; ?>
@@ -101,7 +101,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-primary">Salvar</button>
+                <button type="submit" class="btn btn-primary"><i class="fa fa-floppy-o" aria-hidden="true"></i> Salvar</button>
             </div>
         </form>
     </div>
