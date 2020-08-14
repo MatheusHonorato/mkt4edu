@@ -54,7 +54,7 @@
 
                                     <div class="form-group">
                                         <label>Celular</label>
-                                        <input type="tel" class="form-control phone" name="celular" minlength="8" maxlength="15" value="<?=$contato->getCelular();?>" min="8" required/>
+                                        <input type="tel" class="form-control phone" name="celular" minlength="8" maxlength="15" value="<?=$contato->getCelular();?>" required/>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
