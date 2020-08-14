@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Ago-2020 às 19:08
--- Versão do servidor: 10.4.6-MariaDB
--- versão do PHP: 7.3.8
+-- Tempo de geração: 14-Ago-2020 às 16:08
+-- Versão do servidor: 10.4.13-MariaDB
+-- versão do PHP: 7.2.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -40,8 +39,10 @@ CREATE TABLE `contatos` (
 --
 
 INSERT INTO `contatos` (`id`, `nome`, `email`, `celular`) VALUES
-(3, 'Marcus Vinicius Silva', '3333333', NULL),
-(5, 'Maria', 'm@m.com', '222222');
+(3, 'Marcos Vinicius', 'e@e.com', '11111111111'),
+(7, 'João Pereira', 'j@j.com', '33333333'),
+(10, 'Zé', 'z@z.com', '99999999999'),
+(11, 'Maria Bacana', 'm@m.com', '(99) 99999-9999');
 
 --
 -- Índices para tabelas despejadas
@@ -61,7 +62,7 @@ ALTER TABLE `contatos`
 -- AUTO_INCREMENT de tabela `contatos`
 --
 ALTER TABLE `contatos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
