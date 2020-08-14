@@ -44,17 +44,17 @@
                                 <div class="modal-body">
                                     <div class="form-group">
                                         <label>Nome</label>
-                                        <input type="text" class="form-control" name="nome" value="<?=$contato->getNome();?>" />
+                                        <input type="text" class="form-control" name="nome" value="<?=$contato->getNome();?>" minlength="1" maxlength="60" required/>
                                     </div>
 
                                     <div class="form-group">
                                         <label>E-mail</label>
-                                        <input type="email" class="form-control" name="email" value="<?=$contato->getEmail();?>" />
+                                        <input type="email" class="form-control" name="email" value="<?=$contato->getEmail();?>" minlength="3" maxlength="60" required/>
                                     </div>
 
                                     <div class="form-group">
                                         <label>Celular</label>
-                                        <input type="text" class="form-control" name="celular" value="<?=$contato->getCelular();?>"/>
+                                        <input type="tel" class="form-control phone" name="celular" minlength="8" maxlength="15" value="<?=$contato->getCelular();?>" min="8" required/>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -86,17 +86,17 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label>Nome</label>
-                    <input type="text" class="form-control" name="nome" />
+                    <input type="text" class="form-control" name="nome" minlength="1" maxlength="60" required/>
                 </div>
 
                 <div class="form-group">
                     <label>E-mail</label>
-                    <input type="email" class="form-control" name="email" />
+                    <input type="email" class="form-control" name="email" minlength="3" maxlength="60" required/>
                 </div>
 
                 <div class="form-group">
                     <label>Celular</label>
-                    <input type="text" class="form-control" name="celular" />
+                    <input type="tel" class="form-control phone" name="celular" minlength="8" maxlength="15" required/>
                 </div>
             </div>
             <div class="modal-footer">

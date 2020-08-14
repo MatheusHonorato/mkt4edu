@@ -21,10 +21,10 @@ if($nome && $email) {
         header("Location: index.php");
         exit;
     } else {
-        header("Location: adicionar.php");
+        header("Location: index.php");
         exit;
     }
 } else {
-    header("Location: adicionar.php");
+    header("Location: index.php");
     exit;
 }
