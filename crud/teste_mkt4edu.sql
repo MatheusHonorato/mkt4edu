@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Ago-2020 às 16:08
+-- Tempo de geração: 14-Ago-2020 às 16:11
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.2.32
 
@@ -39,10 +39,9 @@ CREATE TABLE `contatos` (
 --
 
 INSERT INTO `contatos` (`id`, `nome`, `email`, `celular`) VALUES
-(3, 'Marcos Vinicius', 'e@e.com', '11111111111'),
-(7, 'João Pereira', 'j@j.com', '33333333'),
-(10, 'Zé', 'z@z.com', '99999999999'),
-(11, 'Maria Bacana', 'm@m.com', '(99) 99999-9999');
+(12, 'João Silva', 'joao@silva.com', '(38) 99999-9999'),
+(13, 'Maria Pereira', 'maria@pereira.com', '(88) 99999-9999'),
+(14, 'Rafael Silva', 'rafael@silva.com', '(38) 98888-8888');
 
 --
 -- Índices para tabelas despejadas
@@ -62,7 +61,7 @@ ALTER TABLE `contatos`
 -- AUTO_INCREMENT de tabela `contatos`
 --
 ALTER TABLE `contatos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
